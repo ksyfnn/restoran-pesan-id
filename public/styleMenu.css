@@ -146,9 +146,205 @@ section{
   background-color: black; 
   margin: auto;
 }
+/* menu bawah */
+
+.main{
+  justify-content: space-between;
+  display: flex;
+  margin: 25px;
+}
+
+.main h1{
+  padding: 10px 50px 10px 50px;
+  background-color: #F0BC58;
+  text-align: center;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1:nth-child(2){
+  margin-top: 10px;
+}
+
+.body{
+  z-index: -1;
+  position: relative;
+  border-radius: 20px;
+  width: 620px;
+  height: 230px;
+  background-color: #D0A406;
+  margin: 20px;
+  display: inline-block;
+}
+
+.pict-left img{
+  border-radius: 10px;
+  margin: 14px;
+  width: 205px;
+  height: 200px;
+  position: absolute;
+}
+
+.text-left{
+  position: absolute;
+  left: 14em;
+  background-color: white;
+  width: 349px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.title-left{
+  padding: 14px;
+  font-size: 18px;
+  font-family: 'Leckerli One';
+  color: #D1A506;
+}
+
+#statement-left{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.price-left{
+  width: 120px;
+  height: 45px;
+  position: absolute;
+  margin: 10px;
+  border-radius: 10px;
+  left: 18em;
+  top: 10em;
+  background-color: white;
+}
 
 
+.button-left{
+  text-decoration: none;
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  margin: 10px;
+  position: absolute;
+  left: 27em;
+  top: 10em;
+  border-radius: 10px;
+}
 
+.p-button-left{
+  position: absolute;
+  left: -2em;
+}
+
+svg{
+  width: 35px;
+  height: 35px;
+}
+
+.button-left li{
+  list-style: none;
+  float: left;
+}
+
+.button-left ul{
+  top: -0.6em;
+  left: -1em;
+  position: absolute;
+}
+
+.p-button-left p{
+  font-size: 12px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* right */
+
+.pict-right img{
+  border-radius: 10px;
+  margin: 14px;
+  width: 205px;
+  height: 200px;
+  position: absolute;
+  right: -0em;
+}
+
+.text-right{
+  position: absolute;
+  right: 14em;
+  background-color: white;
+  width: 349px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.title-right{
+  padding: 14px;
+  font-size: 18px;
+  font-family: 'Leckerli One';
+  color: #D1A506;
+}
+
+#statement-right{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.price-right{
+  width: 120px;
+  height: 45px;
+  position: absolute;
+  margin: 10px;
+  border-radius: 10px;
+  right: 18em;
+  top: 10em;
+  background-color: white;
+}
+
+.button-right{
+  text-decoration: none;
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  margin: 10px;
+  position: absolute;
+  right: 27em;
+  top: 10em;
+  border-radius: 10px;
+}
+
+.p-button-right{
+  position: absolute;
+  right: -2em;
+}
+
+.button-right li{
+  list-style: none;
+  float: right;
+}
+
+.button-right ul{
+  top: -0.6em;
+  left: -1em;
+  position: absolute;
+}
+
+.p-button-right p{
+  font-size: 12px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
 
 .sec-block p:nth-of-type(1){
   text-decoration: line-through;
