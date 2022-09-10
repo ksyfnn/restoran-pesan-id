@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+/* controller language */
+Route::get('/localization/{$language}',\App\Http\Controllers\LocalizationController::class)->name('localization.switch');
 
 Route::get('/landingpage', function () {
     return view('landingpage');

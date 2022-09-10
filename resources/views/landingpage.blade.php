@@ -16,25 +16,31 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Leckerli+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer&family=Inknut+Antiqua:wght@300&display=swap" rel="stylesheet">
 
+	<!-- jquery -->
+	<script src="jquery.js"></script>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
 	<!-- favicom -->
 	<link rel="icon" href="bgbanner/logo.png">
+</head>
 <body>
 	<!-- start navigation -->
 	<header>
 		<a href="#home" style="text-decoration: none;"><div class="firstname">pesenin</div></a>
 	<nav>
-	<ul id="navbar" class="navbar">
-		<a href="/verifikasi"><button class="start">start</button></a>
-		<li><a href="#home">home</a></li>
-		<li><a href="#menu">menu</a></li>
-		<li><a href="#blog">blog</a></li>
-		<li><a href="#order">order</a></li>
-		<li><a href="#contact">contact</a></li>
-	</ul>
+		<ul id="navbar" class="navbar">
+			<a href="/verifikasi"><button class="start">start</button></a>
+			<li><a href="#home">home</a></li>
+			<li><a href="#menu">menu</a></li>
+			<li><a href="#blog">blog</a></li>
+			<li><a href="#order">order</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
 	</nav>
-	
+	<div class="menu-toggle">
+            	<i class="fa fa-bars"></i>
+        	</div>
 	</header>
 
 	<!-- start banner -->
@@ -80,7 +86,7 @@
 	
 
 	<!-- start our future -->
-	<section class="sec-block pb-0" >
+	<section class="sec-block pb-0">
 
 		<div class="container" data-aos="fade-up" data-aos-duration="1000" id="future">
 			<div class="section-title text-center">
@@ -112,9 +118,15 @@
 				<div class="row text-center" id="b-view">
 					<div class="col-12">
 						<!-- button view all -->
-					<button class="b-view" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					<button class="b-view" onclick="myFunction()">
   					view all
 					</button>
+
+					<script>
+						function myFunction(){
+							alert("ups u should tap the button start");
+						}
+					</script>
 
 						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 						  <div class="modal-dialog">
@@ -354,6 +366,15 @@
     		.start();
 
 	</script>
+	<!-- jquery -->
+	<script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script>

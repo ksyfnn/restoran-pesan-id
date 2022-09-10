@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styleEmpty.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Pesan.in</title>
+    <!-- faveicon -->
+    <link rel="icon" href="bgbanner/logo.png">
 </head>
 <body>
     <header>
@@ -13,7 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="/landingpage">Home</a></li>
-                    <li><a onclick="myFunction()">Menu</a></li>
+                    <li><a href="" onclick="myFunction()">Menu</a></li>
                     <li><a href="">My Cart</a></li>
                     <li><a href="/error">Payment</a></li>
                 </ul>

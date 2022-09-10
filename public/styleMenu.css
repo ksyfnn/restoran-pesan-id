@@ -9,13 +9,14 @@ body{
   position: relative;
   height: auto;
   overflow-x: hidden;
+  z-index: 1;
 }
 
 section{
-  background: #F2C46C;
   display: block;
   position: relative;
   margin: auto;
+  padding: 30px 0 30px 0;
 }
 
 header {
@@ -76,17 +77,18 @@ header nav ul li a.active {
     color: black;
   }
 
-section{
+#color-top{
+  background: #F2C46C;
+}
+
+.sec-block{
   display: block;
   position: relative;
   margin: auto;
   padding: 170px 0;
-}
-
-.sec-block{
   z-index: -1;
 }
-
+/* word "dont miss the discount "*/
 .text-discount{
   font-family: 'Poppins', sans-serif;
   background-color: white;
@@ -104,7 +106,7 @@ section{
   text-transform: capitalize;
 }
 
-.sec-block .container{
+.sec-block .sp-b{
   justify-content: space-between;
   display: flex;
 }
@@ -115,18 +117,18 @@ section{
   background-color: #D1A506;
 }
 
-.card img{
+#color-top .card img{
   border-radius: 20px; 
   object-fit: cover;
 }
-
-.card-body{
+/* body background whites */
+#color-top .card-body{
   height: 350px; 
   background-color: white; 
   border-radius: 20px;
 }
 
-.card-title{
+#color-top .card-title{
   font-family: 'Leckerli One';
   color: #D1A506;
   font-size: 24px;
@@ -134,13 +136,17 @@ section{
   margin: 10px;
 }
 
-.card-text{
+#color-top .card-body .card-text:nth-of-type(1){
+  text-decoration: line-through;
+}
+
+#color-top .card-text{
   font-size: 28px;
   color: black;
   font-family: 'Poppins', sans-serif;
 }
-
-.card .line{
+/* line ireng */
+#color-top .card .line{
   width: 125px; 
   height: 1px; 
   background-color: black; 
@@ -221,6 +227,18 @@ h1:nth-child(2){
   background-color: white;
 }
 
+<<<<<<< HEAD
+/* menu bawah */
+#desc{
+  width: 100%;
+  background: white;
+  padding: 80px;
+  display: flex;
+  text-align: center;
+  color: black;
+  font-family: Poppins;
+  justify-content: space-between;
+=======
 
 .button-left{
   text-decoration: none;
@@ -348,55 +366,155 @@ svg{
 
 .sec-block p:nth-of-type(1){
   text-decoration: line-through;
+>>>>>>> 859312af2437c62c06ebd0e9df527e8e696f4658
 }
 
-  /* media small leptop */
-@media screen and (max-width: 1024px){
-  section{
-    width: 1100px;
-  }
+#desc p{
+  font-size: 30px;
+  font-weight: 600;
+}
 
-  .text-discount p{
-    font-size: 25px;
-  }
+#desc .desc{
+  width: 160px;
+  height: 60px;
+  background: #F0BC58;
+} 
 
-  .card{
-    margin: 10px;
-  }
+#desc .desc:nth-last-child(2){
+  margin-top: -30px;
+}
 
-  .card-body{
-    height: 310px;
-  }
+#grid-1{
+  background: #F2C46C;
+}
 
-  .card-text{
-    font-size: 23px;
-  }
+#grid-3{
+  background: #F2C46C;
+}
+/* line in grid 4 */
+#grid-4 .line{
+  width: 75%; 
+  margin: auto;
+  margin-top: 2em;
+  height: 1px; 
+  background: black;
+  font-weight: 800;
+}
+
+.sec-block2{
+  z-index: -1;
+}
+
+.container{
+  display: flex;
+  
+}
+
+.card-body h5{
+  font-family: 'Leckerli One';
+  color: #D1A506;
+  font-size: 20px;
+}
+
+.card-body .card-text{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card{
+  margin: 15px;
+}
+/* increment */
+
+.qty button{
+  outline: none;
+  border: none;
+  padding: 4px 10px 4px 10px;
+  margin: 0;
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+}
+
+.qty{
+  width: 150px;
+  height: 45px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.value{
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 5px;
+  background: black;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+}
+
+.price{
+  position: absolute;
+  top: 80%;
+  left: 67%;
+  text-align: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
 
 }
 
-/* media tablet */
-@media only screen and (max-width: 991px) and (min-width: 768px){
+.container .card:nth-last-child(1) .price{
 
-  .text-center{
-    margin-left: 0;
-  } 
-
-  .container .text-discount p{
-    font-size: 20px;
-  }
-
-  .card {
-    margin: 10px;
-  }
-
-  .card-body{
-    height: 230px;
-  }
-
-  .card-text{
-    font-size: 20px;
-  }
+  position: absolute;
+  top: 80%;
+  left: 8%;
+  text-align: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
 }
+
+svg{
+  width: 35px;
+  height: 35px;
+}
+
+.add-cart{
+  text-align: center;
+  margin: 20px;
+}
+
+.add-cart button{
+  width: 200px;
+  height: 60px;
+  font-family: poppins, sans-serif;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  background:  #F0BC58;
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.add-cart button:hover{
+  background: #d1a506;
+  color: black;
+}
+<<<<<<< HEAD
+=======
   
   /* responsive */
   
@@ -432,3 +550,4 @@ svg{
         color: rgb(255, 255, 255);
     }
 }
+>>>>>>> 859312af2437c62c06ebd0e9df527e8e696f4658
